@@ -21,7 +21,7 @@ Publish or schedule the user's content using the PostZen MCP tools. The user's r
    - `publishNow: true` — publishes immediately.
    - `scheduledFor` — ISO-8601 UTC, at least 60 seconds in the future. If the user gave a local time, convert to UTC and confirm the conversion.
    - `isDraft: true` — saves without publishing.
-   - Queue: if the user says "add to queue" or gives no time preference for a scheduled post, call `getNextQueueSlot` (or `previewQueue` to show upcoming slots) and use that slot's time as `scheduledFor`. `getBestTimeToPost` suggests data-driven times.
+   - Queue: if the user says "add to queue" or gives no time preference for a scheduled post, pass `queuedFromProfile` (the profile id) on `createPost` instead of `scheduledFor` — PostZen claims the next free slot atomically and returns it. Never fetch `getNextQueueSlot` and pass its time as `scheduledFor` (the slot isn't reserved, so it can race); use it only to tell the user when their post would go out. `getBestTimeToPost` suggests data-driven times for non-queue scheduling.
 5. **Confirm before publishing.** Show the final per-platform content and timing and get an explicit yes before calling `createPost` with `publishNow` or a near-term `scheduledFor`. Drafts don't need confirmation.
 6. **Create the post** with `createPost`: `content`, `platforms: [{ platform, accountId }, ...]`, optional `mediaItems`, and the timing field. Report back the post `_id`, status, and scheduled time.
 

@@ -7,6 +7,7 @@ The plugin connects to the hosted [PostZen MCP server](https://mcp.postzen.dev) 
 ## What you get
 
 - **`/postzen:post`** — draft, adapt, and publish or schedule a post across platforms, with media uploads, queue slots, and best-time-to-post suggestions.
+- **`/postzen:queue`** — set up recurring posting slots (at your best-performing times), preview upcoming posts, and fill the queue.
 - **`/postzen:analytics`** — a readable analytics summary: post performance, follower growth, daily metrics.
 - **`/postzen:connect`** — guided flow to link a new social account.
 - **35+ MCP tools** for everything else: queue management, Pinterest boards, webhooks, profiles, media presigns, and more. Claude picks these up automatically.
