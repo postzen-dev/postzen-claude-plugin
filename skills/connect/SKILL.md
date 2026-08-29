@@ -10,7 +10,9 @@ Walk the user through linking a social account so posts can target it. The user'
 
 1. **Show current state.** Call `listAccounts` and summarize what's already connected (platform + username) so the user doesn't double-connect.
 2. **Start the connection.** Call `createConnectUrl` for the requested platform. Give the user the returned auth URL as a clickable link and tell them to open it in their browser, sign in to the platform, and approve access. Do not try to complete the OAuth flow for them.
-3. **Finish.** After the user says they've approved, call `completeConnect` (when the flow requires it) and then `listAccounts` again to confirm the new account appears. Report the connected username.
+3. **Finish and verify.** After the user says they've approved, call `completeConnect` (when the flow requires it) and then `listAccounts` again. Check the resulting account's `status` — not just that it appears. Two pitfalls:
+   - Connections key on the platform-side account identity: if the user signed in to a *different* login on the platform than the one they meant to fix, a **separate** account row is created and the old one stays broken (e.g. still `needsReauth`). Compare the returned username against what the user expected and flag a mismatch.
+   - A `connected` status proves auth, not publishing. If the user is connecting because publishing failed, suggest a quick test post (a draft, or a real post they confirm) to exercise the publish path.
 4. **Platform-specific follow-ups:**
    - **Pinterest**: after connecting, a default board should be selected — use `listPinterestBoardsForSelection` and `selectPinterestBoard` (or `createPinterestBoard` for a new one). The board-selection window is time-limited, so do this right after connecting.
    - **Bluesky**: uses an app password rather than OAuth — direct the user to the connect URL, where they'll paste an app password generated in their Bluesky settings. Never ask the user to paste the app password into this chat.
