@@ -1,10 +1,11 @@
 ---
+name: post
 description: Create, schedule, or queue a social media post with PostZen. Use when the user wants to post, schedule, cross-post, or draft content for X (Twitter), Instagram, TikTok, LinkedIn, Facebook, YouTube, Threads, Pinterest, Bluesky, or Telegram.
 ---
 
 # Post with PostZen
 
-Publish or schedule the user's content using the PostZen MCP tools. The user's request follows: "$ARGUMENTS"
+Publish or schedule the user's content using the PostZen MCP tools provided by this plugin. The user's request follows: "$ARGUMENTS"
 
 ## Workflow
 

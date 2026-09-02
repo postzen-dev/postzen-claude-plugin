@@ -1,10 +1,11 @@
 ---
+name: queue
 description: Set up and manage PostZen posting queues — recurring time slots that posts fill automatically. Use when the user wants to create, review, or reorganize their posting schedule, see upcoming slots, or post at their best-performing times.
 ---
 
 # Manage PostZen queues
 
-Help the user build and maintain a posting queue. The user's request follows: "$ARGUMENTS"
+Help the user build and maintain a posting queue using the PostZen MCP tools provided by this plugin. The user's request follows: "$ARGUMENTS"
 
 A queue is a set of recurring weekly time slots (e.g. Mon/Wed/Fri at 9:00) tied to a profile and timezone. Posts added "to the queue" are scheduled into the next open slot automatically.
 

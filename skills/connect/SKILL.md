@@ -1,10 +1,11 @@
 ---
+name: connect
 description: Connect a new social media account to PostZen (X, Instagram, TikTok, LinkedIn, Facebook, YouTube, Threads, Pinterest, Bluesky, Telegram) or review/disconnect existing connections.
 ---
 
 # Connect a social account to PostZen
 
-Walk the user through linking a social account so posts can target it. The user's request follows: "$ARGUMENTS"
+Walk the user through linking a social account so posts can target it, using the PostZen MCP tools provided by this plugin. The user's request follows: "$ARGUMENTS"
 
 ## Workflow
 

@@ -1,10 +1,11 @@
 ---
+name: analytics
 description: Build a social media analytics report from PostZen — post performance, follower growth, daily metrics, and best times to post across connected accounts. Use when the user asks how their posts or accounts are performing.
 ---
 
 # PostZen analytics report
 
-Produce a readable performance summary for the user's connected social accounts. The user's request follows: "$ARGUMENTS"
+Produce a readable performance summary for the user's connected social accounts using the PostZen MCP tools provided by this plugin. The user's request follows: "$ARGUMENTS"
 
 ## Workflow
 
