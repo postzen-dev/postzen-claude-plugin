@@ -1,7 +1,7 @@
 {
   "name": "postzen",
   "description": "Schedule and publish social media posts across 10 platforms (X, Instagram, TikTok, LinkedIn, Facebook, YouTube, Threads, Pinterest, Bluesky, Telegram) from Claude Code, with queue management and analytics reports.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "author": {
     "name": "PostZen",
     "url": "https://www.postzen.dev"
