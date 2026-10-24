@@ -20,7 +20,7 @@ claude plugin install postzen@claude-community
 
 Then authenticate: run `/mcp` in a session, select **postzen**, and click **Authenticate**. You'll be sent to the PostZen dashboard to approve access (and choose which profiles to expose), then bounced back automatically.
 
-Don't have a PostZen account? Sign up at [postzen.dev](https://www.postzen.dev) and connect your social accounts in the [dashboard](https://app.postzen.dev) — or let Claude walk you through it with `/postzen:connect`.
+Don't have a PostZen account? Sign up at [postzen.dev](https://www.postzen.dev/?utm_source=claude&utm_medium=plugin&utm_campaign=postzen-claude-plugin) and connect your social accounts in the [dashboard](https://app.postzen.dev/?utm_source=claude&utm_medium=plugin&utm_campaign=postzen-claude-plugin) — or let Claude walk you through it with `/postzen:connect`.
 
 ### Headless / CI use
 
@@ -54,7 +54,7 @@ Run `/reload-plugins` after editing to pick up changes, and `claude plugin valid
 
 ## Links
 
-- [PostZen](https://www.postzen.dev) · [Dashboard](https://app.postzen.dev) · [API docs](https://docs.postzen.dev) · [Status](https://status.postzen.dev)
+- [PostZen](https://www.postzen.dev/?utm_source=claude&utm_medium=plugin&utm_campaign=postzen-claude-plugin) · [Dashboard](https://app.postzen.dev/?utm_source=claude&utm_medium=plugin&utm_campaign=postzen-claude-plugin) · [API docs](https://docs.postzen.dev) · [Status](https://status.postzen.dev)
 - Prefer a raw API? See the [agent quickstart](https://www.postzen.dev/agent-quickstart.md), the [Node SDK](https://www.npmjs.com/package/@postzen/node), [Python SDK](https://pypi.org/project/postzen-sdk/), or [CLI](https://www.npmjs.com/package/@postzen/cli).
 
 ## License
