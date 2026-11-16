@@ -24,12 +24,7 @@ Don't have a PostZen account? Sign up at [postzen.dev](https://www.postzen.dev/?
 
 ### Headless / CI use
 
-For non-interactive environments, skip OAuth and pass an API key (create one in the dashboard under Settings → API keys):
-
-```bash
-claude mcp add --transport http postzen https://mcp.postzen.dev/mcp \
-  --header "Authorization: Bearer $POSTZEN_API_KEY"
-```
+For scripts and non-interactive environments, PostZen's MCP server also accepts an API key instead of OAuth. See [API key authentication](https://docs.postzen.dev/mcp#api-key-automation) in the PostZen docs.
 
 ## Example prompts
 
