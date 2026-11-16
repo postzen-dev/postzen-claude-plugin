@@ -22,10 +22,6 @@ Then authenticate: run `/mcp` in a session, select **postzen**, and click **Auth
 
 Don't have a PostZen account? Sign up at [postzen.dev](https://www.postzen.dev/?utm_source=claude&utm_medium=plugin&utm_campaign=postzen-claude-plugin) and connect your social accounts in the [dashboard](https://app.postzen.dev/?utm_source=claude&utm_medium=plugin&utm_campaign=postzen-claude-plugin) — or let Claude walk you through it with `/postzen:connect`.
 
-### Headless / CI use
-
-For scripts and non-interactive environments, PostZen's MCP server also accepts an API key instead of OAuth. See [API key authentication](https://docs.postzen.dev/mcp#api-key-automation) in the PostZen docs.
-
 ## Example prompts
 
 - "Post this launch announcement to X and LinkedIn tomorrow at 9am PT"
